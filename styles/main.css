@@ -1,0 +1,73 @@
+@font-face {
+    font-family: 'MiFuente';
+    src: url("fonts/mifuente-runes.otf") format('opentype'); /*format('opentype') para .otf y format('truetype') para .ttf.*/
+}
+
+body{
+    background-image: url("../src/images/noche.gif");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: 'MiFuente';
+    letter-spacing: 0.em;
+    color: white;
+}
+main{
+    width: 730px;
+    margin: 100px auto ;
+    display: flex;
+    align-items: center; /*Acá estoy poniendo que este todo alineado en el cedntro, por ejemplo el setor 2 que es mmás corto*/
+}
+
+.section1{
+   background-color: rgba(255, 255, 255, 0.2);
+   padding: 0 10px 10px 10px;
+   border-radius: 8px; 
+}
+
+h1{
+    text-align: center;
+}
+
+.card{
+    height: 150px;
+    width: 150px;
+    font-size: 40px;
+    color:black;
+    font-weight: bold;
+}
+
+.botonIniciar{
+    padding: 8px 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+
+button:hover{
+    cursor: pointer;
+}  /*Esto es para que el cursor pase de ser una flecha a ser una mmano*/
+
+.section2{ /*Acá ponemos en la segunda parte también con una transparencia */
+    background-color: rgba(255, 255, 255, 0.2);
+    border-top-right-radius: 8px; /*Esto sería solo el borde derecho superior*/
+    border-bottom-right-radius: 8px; /*Esto sería solo para el borde derecho inferior*/
+    width: 800px; /*Esto sería el ancho de la caja*/
+    height: 600px;
+    padding: 0 20px;
+
+}
+
+.estadisticas{
+    border: 1px solid white;
+    height: 150px;
+    border-radius: 8px; /*contorno redondeado*/
+    padding: 15px 40px; /*altura y ancho*/
+    box-sizing: border-box; /*Esto es para que no se salga de la caja*/
+}
+
+footer{
+    text-align: center;
+}
