@@ -36,6 +36,8 @@ h1{
     font-size: 40px;
     color:black;
     font-weight: bold;
+    border-radius: 50%;
+    
 }
 
 .botonIniciar{
@@ -67,6 +69,33 @@ button:hover{
     padding: 15px 40px; /*altura y ancho*/
     box-sizing: border-box; /*Esto es para que no se salga de la caja*/
 }
+
+.modal {
+    display: none; /* Oculta el modal por defecto */
+    position: fixed; /* Fija el modal en la parte superior */
+    z-index: 1; /* Asegura que el modal se vea sobre otros elementos */
+    left: 0;
+    top:0;
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Alto completo */
+    background-color: rgba(0, 0, 0, 0.4); /* Fondo oscuro semitransparente */
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal-content {
+    background-color: white
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+  }
+
+  .close {
+    float: right;
+    font-size: 20px;
+    cursor: pointer;
+  }
 
 footer{
     text-align: center;
