@@ -9,8 +9,6 @@
     <!--<link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">--> <!--Este es para usarlo en local-->
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel ="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">--> <!--Esto es para usarlo en línea-->
 
-
-
 </head>
 
 <body>
@@ -19,28 +17,28 @@
             <h1>Juego de memoria</h1>
             <table id="tablero">
                 <tr>
-                    <td><img src="src/images/parteTrasera.jpg" class="card"></td>
-                    <td><img src="src/images/parteTrasera.jpg" class="card"></td>
-                    <td><img src="src/images/parteTrasera.jpg" class="card"></td>
-                    <td><img src="src/images/parteTrasera.jpg" class="card"></td>
+                    <td><img id="0" src="src/images/parteTrasera.jpg" class="card-back"></td> <!-- Este lo toma como posición 0, el siguiente como 1 y así de manera secuencial-->
+                    <td><img id="1"src="src/images/parteTrasera.jpg" class="card-back"></td>
+                    <td><img id="2"src="src/images/parteTrasera.jpg" class="card-back"></td>
+                    <td><img id="3"src="src/images/parteTrasera.jpg" class="card-back"></td>
                 </tr>
                 <tr>
-                    <td><img src="src/images/parteTrasera.jpg" class="card"></td>
-                    <td><img src="src/images/parteTrasera.jpg" class="card"></td>
-                    <td><img src="src/images/parteTrasera.jpg" class="card"></td>
-                    <td><img src="src/images/parteTrasera.jpg" class="card"></td>
+                    <td><img id="4" src="src/images/parteTrasera.jpg" class="card-back"></td>
+                    <td><img id="5" src="src/images/parteTrasera.jpg" class="card-back"></td>
+                    <td><img id="6" src="src/images/parteTrasera.jpg" class="card-back"></td>
+                    <td><img id="7" src="src/images/parteTrasera.jpg" class="card-back"></td>
                 </tr>
                 <tr>
-                    <td><img src="src/images/parteTrasera.jpg" class="card"></td>
-                    <td><img src="src/images/parteTrasera.jpg" class="card"></td>
-                    <td><img src="src/images/parteTrasera.jpg" class="card"></td>
-                    <td><img src="src/images/parteTrasera.jpg" class="card"></td>
+                    <td><img id="8" src="src/images/parteTrasera.jpg" class="card-back"></td>
+                    <td><img id="9" src="src/images/parteTrasera.jpg" class="card-back"></td>
+                    <td><img id="10" src="src/images/parteTrasera.jpg" class="card-back"></td>
+                    <td><img id="11" src="src/images/parteTrasera.jpg" class="card-back"></td>
                 </tr>
                 <tr>
-                    <td><img src="src/images/parteTrasera.jpg" class="card"></td>
-                    <td><img src="src/images/parteTrasera.jpg" class="card"></td>
-                    <td><img src="src/images/parteTrasera.jpg" class="card"></td>
-                    <td><img src="src/images/parteTrasera.jpg" class="card"></td>
+                    <td><img id="12" src="src/images/parteTrasera.jpg" class="card-back"></td>
+                    <td><img id="13" src="src/images/parteTrasera.jpg" class="card-back"></td>
+                    <td><img id="14" src="src/images/parteTrasera.jpg" class="card-back"></td>
+                    <td><img id="15" src="src/images/parteTrasera.jpg" class="card-back"></td>
                 </tr>
             </table>
         </section>
@@ -48,7 +46,6 @@
             <h2 id="aciertos" class="estadisticas">Aciertos: <span id="contador_aciertos">0</span></h2>
             <h2 id="tiempo_restante" class="estadisticas">Tiempo: <span id="contador_aciertos">60</span>segundos</h2>
             <h2 id="movimientos" class="estadisticas">Movimientos: <span id="contador_aciertos">0</span></h2>
-            <button class="botonIniciar">Iniciar Juego</button>
         </section>
 
         <audio id="sonidoFondo" loop autoplay>

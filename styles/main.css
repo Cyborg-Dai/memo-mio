@@ -30,15 +30,22 @@ h1{
     text-align: center;
 }
 
-.card{
+.card-back{ 
     height: 150px;
     width: 150px;
     font-size: 40px;
     color:black;
     font-weight: bold;
     border-radius: 50%;
+    cursor: pointer;
     
 }
+
+.non-clickeable {
+    cursor: default /*Flecha normal*/
+    pointer-events: none; /*Esto es para que no pueda ser clickeado. Desactivo interacción*/
+}
+
 
 .botonIniciar{
     padding: 8px 20px;
