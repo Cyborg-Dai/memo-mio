@@ -3,7 +3,7 @@
     src: url("fonts/mifuente-runes.otf") format('opentype'); /*format('opentype') para .otf y format('truetype') para .ttf.*/
 }
 
-body{
+body {
     background-image: url("../src/images/noche.gif");
     background-size: cover;
     background-position: center;
@@ -30,22 +30,26 @@ h1{
     text-align: center;
 }
 
-.card-back{ 
+.card-back {
     height: 150px;
     width: 150px;
-    font-size: 40px;
-    color:black;
-    font-weight: bold;
     border-radius: 50%;
     cursor: pointer;
-    
+    transition: transform 0.3s ease;
 }
 
-.non-clickeable {
-    cursor: default /*Flecha normal*/
-    pointer-events: none; /*Esto es para que no pueda ser clickeado. Desactivo interacción*/
+.card-back.card-flipped {
+    transform: rotateY(180deg);
 }
 
+.card-back.non-clickeable {
+    pointer-events: none;
+}
+
+td{
+    padding: 5px;
+    text-align: center;
+}
 
 .botonIniciar{
     padding: 8px 20px;
@@ -107,3 +111,17 @@ button:hover{
 footer{
     text-align: center;
 }
+
+#sonidoFondo {
+    display: block;
+    position: fixed;
+    top: 20px;
+    left: 10px;
+    width: 300px;
+    opacity: 0.5; /* Hace todo el control más transparente (0.0 a 1.0) */
+    background-color: rgba(0, 0, 0, 0.2); /* Fondo blanco semitransparente */
+    border-radius: 8px; /* Opcional: para bordes redondeados */
+}
+
+/* Para que el control se vuelva más opaco al pasar el mouse por encima */
+

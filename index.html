@@ -6,7 +6,7 @@
           content="width=device-width, initial-scale=1.0">
     <title>MEMOTEST</title>
     <link rel="stylesheet" href="styles/main.css">
-    <!--<link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">--> <!--Este es para usarlo en local-->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"> <!--Este es para usarlo en local-->
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel ="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">--> <!--Esto es para usarlo en línea-->
 
 </head>
@@ -44,21 +44,23 @@
         </section>
         <section class="section2">
             <h2 id="aciertos" class="estadisticas">Aciertos: <span id="contador_aciertos">0</span></h2>
-            <h2 id="tiempo_restante" class="estadisticas">Tiempo: <span id="contador_aciertos">60</span>segundos</h2>
-            <h2 id="movimientos" class="estadisticas">Movimientos: <span id="contador_aciertos">0</span></h2>
+            <h2 id="tiempo_restante" class="estadisticas">Tiempo: <span id="contador_tiempo">60</span>segundos</h2>
+            <h2 id="movimientos" class="estadisticas">Movimientos: <span id="contador_movimientos">0</span></h2>
         </section>
 
-        <audio id="sonidoFondo" loop autoplay>
+        <audio id="sonidoFondo" loop controls>
             <source src="src/sounds/music-viking.wav" type="audio/wav">
+            Tu navegador no soporta el elemento de audio.
         </audio>
     </main>
 
     <div id="mensajeFinJuego" style="display: none;" class="modal"> <!--Modal es una ventana emergente-->
         <div class="modal-content">
+            <span class="close">&times;</span>
             <h2 id="mensajeResultado"></h2>
-            <p>Has completado el juego en <span id="contador_movimientos">0</span> movimientos.</p>
-            <p>Con un total de <span id="contador_aciertos">0</span> aciertos.</p>
-            <p>Tu tiempo restante fue de <span id="contador_tiempo">0</span> segundos.</p>
+            <p>Has completado el juego en <span id="modal_movimientos">0</span> movimientos.</p>
+            <p>Con un total de <span id="modal_aciertos">0</span> aciertos.</p>
+            <p>Tu tiempo restante fue de <span id="modal_tiempo">0</span> segundos.</p>
             <button class="botonReiniciar">Reiniciar Juego</button>
         </div>
     </div>
@@ -66,8 +68,8 @@
     <footer>
         <p>Juego programado por Cyborg.Dai</p>
     </footer>
-<script src="src/mio.js"></script>
-</body>
-</html>
+    <script src="src/mio.js"></script>
+    </body>
+    </html>
 
 
